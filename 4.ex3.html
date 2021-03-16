@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border radius</title>
+    <style>
+        .card {
+            width: 220px;
+            height: 220px;
+            background-color: #ccc;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 14px;}
+        .figure {
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            border-radius: 50%;
+            margin: 5px auto;
+           /* --因為card 跟figure共用邊界 故命令figure的margin 上方並無反應,要改命令外層card padding才可調整-- */
+        }
+        .figure img {
+            width: 100%;}
+        h3 {
+            width: 80%;
+            border-bottom: 1px solid #000;
+            margin: 0 auto;}
+        .box {
+            width: 180px;
+            height: 70px;
+            border: 20px solid transparent;
+            border-image: url(./images/frame_border.png)80 stretch;}
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="figure">
+            <img src="./images/ex1_pic1.jpg" alt="">
+    </div>
+    <div class="box">
+        <h3>Jean</h3>
+        <p>Hello, nice to meet you.</p>
+    </div>
+
+
+
+</body>
+
+</html>

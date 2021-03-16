@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+
+        .container {
+            width: 200px;
+            height: 200px;
+            perspective: 800px;
+            perspective-origin: 50% -150px;
+
+            /* --perspective: 景深 / 透視 / 視距
+                 perspective-origin: 視角原點 
+            -- */
+
+
+        }
+
+        .cube div {
+            width: 200px;
+            height: 200px;
+            /* background-color: aquamarine; */
+
+            position: absolute;
+            font-size: 30px;
+            text-align: center;
+            backface-visibility: visible;
+
+            /* --
+                backface-visibillity: 背面是否可以看到
+                
+            
+            -- */
+
+        }
+
+        .cube {
+            transform-style: preserve-3d;
+            animation-name: cube-rotateX 10s infinite;
+            -webkit-animation: cube-rotateX 10s infinite;
+            /* --transform-style: 子元素是否3d呈現-- */
+
+        }
+
+        .front {
+            z-index: 1;
+            background-color: rgba(127, 129, 255, 0.507);
+            transform: translateZ(100px);
+
+            /* --z index為z軸,因為有position才有z軸-- */
+
+        }
+
+        .back {
+            z-index: 2;
+            background-color: rgba(227, 255, 127, 0.377);
+            transform: rotateY(180deg) translateZ(100px);
+
+
+        }
+
+        .top {
+
+            background-color: rgba(255, 127, 244, 0.377);
+            transform: rotateX(90deg) translateZ(100px);
+
+        }
+
+        .bottom {
+
+            background-color: rgba(246, 255, 127, 0.377);
+            transform: rotateX(-90deg) translateZ(100px);
+
+        }
+
+        .left {
+
+            background-color: rgba(255, 127, 127, 0.377);
+            transform: rotateY(-90deg) translateZ(100px);
+
+        }
+
+        .right {
+
+            background-color: rgba(115, 255, 248, 0.377);
+            transform: rotateY(90deg) translateZ(100px);
+
+        }
+
+        @keyframes cube-rotateX {
+            0% {
+
+                background: red;
+
+            }
+
+            100% {
+
+                background: blue;
+
+            }
+
+
+
+
+            /* ---若要設動畫要打上
+                  @keyframes cube-rotateX { 
+                      0% {
+                          background: red;
+            }
+                    100% {
+                          background: blue;
+            }
+            再於cute給予資料
+
+            animation-name: cube-rotateX;
+            animation-duration: 5s;--- */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cube">
+            <div class="front">前</div>
+            <div class="back">後</div>
+            <div class="top">上</div>
+            <div class="bottom">下</div>
+            <div class="left">左</div>
+            <div class="right">右</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 300px;
+            float: left;
+            margin: 10px;
+            transition: 0.5s;
+            background-color: aquamarine;
+        }
+
+        .translateX {
+            transform: translateX(-100px);
+
+        }
+
+        .translateX:hover {
+            transform: translate(200px, 400px);
+
+            /* --位移 translateX(), translateY(), translate(x,y)-- */
+
+        }
+
+        .rotate:hover {
+            translateX transform: translateX(1000px) rotate(350deg);
+
+            /* --旋轉角度rotate(80deg) -- */
+
+        }
+
+        .scaleX:hover {
+            transform: scale(2, 3);
+            /* --放大scaleX(2), scaleY(2), scale(x,y)-- */
+
+        }
+
+        .skewX:hover {
+            transform: skewY(30deg) translateX(600px);
+            /* ---傾斜 skewX(30deg), skewY(60deg), skew(x angle, y angle)
+-- */
+
+        }
+
+        .Transform-origin {
+            transform-origin: 0px 0px;
+
+        }
+
+        .Transform-origin:hover {
+            transform: rotate(190deg);
+
+            /* --  transform-origin  變形中心點 -- */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box translateX">translateX</div>
+    <div class="box rotate">rotate</div>
+    <div class="box scaleX">scaleX</div>
+    <div class="box skewX">skewX</div>
+    <div class="box Transform-origin">Transform-origin</div>
+</body>
+
+</html>

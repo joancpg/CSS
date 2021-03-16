@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+
+            background-color: #000;
+            /* margin: 200px; */
+            position: relative;
+
+        }
+
+        .background {
+
+            height: 500px;
+            background: url("images/Musee\ du\ Louvre.jpg") center center no-repeat;
+            opacity: 1;
+            transition: 0.5s;
+
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0;
+            opacity: 0.1;
+            color: #fff;
+            transition: 0.5s;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+
+
+        }
+
+        .background:hover {
+            opacity: 0.5;
+        }
+
+        .container:hover h1 {
+            opacity: 1;
+            background-color: #000;
+        }
+
+
+        /* --若opacity包在父層會被受影響,若不想要被影響 建議跟背景同一層 -- */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="background"></div>
+        <h1>PARIS</h1>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 100%;
+            display: flex;
+        }
+
+        .box {
+            width: 200px;
+            margin: 0 20px;
+            background-color: aqua;
+            /* height: 110px; */
+
+            /* overflow: hidden;
+            white-space: nowrap;
+            Text-overflow: ellipsis; */
+            /* --只針對單行,把高給隱藏,三劍客-- */
+
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            /* overflow: hidden; */
+            /* --針對多行,把高給隱藏-- */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quo sapiente aut necessitatibus
+            quasi voluptate, nemo nam dolorum hic porro soluta maxime ullam explicabo delectus obcaecati ipsa voluptas.
+            Esse, sed!</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quo sapiente aut necessitatibus
+            quasi voluptate, nemo nam dolorum hic porro soluta maxime ullam explicabo delectus obcaecati ipsa voluptas.
+            Esse, sed!</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quo sapiente aut necessitatibus
+            quasi voluptate, nemo nam dolorum hic porro soluta maxime ullam explicabo delectus obcaecati ipsa voluptas.
+            Esse, sed!</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quo sapiente aut necessitatibus
+            quasi voluptate, nemo nam dolorum hic porro soluta maxime ullam explicabo delectus obcaecati ipsa voluptas.
+            Esse, sed!</div>
+    </div>
+
+
+</body>
+
+</html>

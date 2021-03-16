@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em rem</title>
+
+    <style>
+        html {
+            font-size: 10px;
+        }
+
+        .title {
+            font-size: 2em;
+        }
+
+        @media (max-width:700px) {
+            html {
+                font-size: 10px;
+            }
+        }
+
+        div {
+            /* root-em */
+            font-size: 2rem;
+        }
+
+
+        /* --過去以 em 為單位時，會因為繼承樣式的關係，造成要控制尺寸的困難，而使用rem 則會永遠相對於 html 的字體大小調整-- */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        1st layer
+        <div class="article">
+            2nd layer
+            <div class="inside-text">
+                3rd layer
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

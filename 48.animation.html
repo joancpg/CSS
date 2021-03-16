@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 50%;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            animation-name: qq;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+
+        }
+
+        .box:hover {
+
+            animation-play-state: paused;
+
+
+        }
+
+        @keyframes qq {
+            0% {
+                top: 0;
+                left: 0;
+
+            }
+
+            50% {
+                top: 150px;
+                left: 200px;
+
+            }
+
+            100% {
+                top: 0px;
+                left: 300px;
+
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid2</title>
+
+    <style>
+        .container {
+            width: 800px;
+            height: 430px;
+            background-color: #ccc;
+
+            display: grid;
+            grid-template-columns: 240px auto;
+            Grid-template-rows: 100px 200px 1fr;
+
+            grid-template-areas:
+                "menu header"
+                "menu content"
+                "footer footer"
+            ;
+            gap: 5px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #aff;
+        }
+
+        .menu {
+            grid-area: menu;
+            background-color: red;
+            vertical-align: middle;
+        }
+
+        .content {
+            grid-area: content;
+            background-color: #faf;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #aaf;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">header</div>
+        <div class="menu">menu</div>
+        <div class="content">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+
+</html>

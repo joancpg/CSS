@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contain cover</title>
+    <style>
+        .city {
+            max-width: 800px;
+            height: 250px;
+            background: url('./images/city.jpg') center center no-repeat;
+            background-size: 300px 300px;
+            margin: 10px;
+            outline: 1px solid #ccc;
+        }
+
+        .contain {
+            background-size: contain;
+        }
+
+        .cover {
+            background-size: cover;
+            background-position: center 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="city"></div>
+    <div class="city contain"></div>
+    <div class="city cover"></div>
+</body>
+
+</html>

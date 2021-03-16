@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 50%;
+            margin: 10px auto;
+        }
+
+        p {
+            border: 1px solid black;
+        }
+
+        .normal {
+            /* word-break: normal; */
+            word-wrap: normal;
+            /* --Normal 保持同一行-- */
+        }
+
+        .break-all {
+            word-break: break-all;
+        }
+
+        .keep-all {
+            /* word-break: keep-all; */
+            word-wrap: break-word;
+            /* ---break-word 切斷詞並換行-- */
+        }
+
+
+        /* ---word-break有分三種  1.normal(預設)  2.break-all 任何處斷行 不利於英文  3.keep-all:針對cjk斷行 --- */
+
+        /* ---word-wrap有分兩種    1.normal保持於同一行   2.break-word(預設)切斷詞並換行- */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore accusantium iure quia
+            voluptatibus rerum facere, nulla magni, veritatis, voluptatem ipsam dolorem quibusdam eos fugit aliquid nemo
+            sunt possimus alias
+            lopadotemachose­lachogaleokranioleipsanodrimhypot­rimmatosilphioparaomelikatake­chymenokichlepikossyphophattoperisteralektry
+            eligendi!原本改變宜蘭受到化學讓他成了連載設立升級各類中心環境我還，電視台緊急其實，空間創意學生地面，樂隊使得清除婚姻上網大約就有前來本帖它們，一份點擊數權力至於差不多施工作家網易石油表現遵守會在一流，節省一種能學到研發真實性害怕我一昨天人間什麼時候，時期連結，是。
+        </p>
+        <p class="break-all">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore accusantium iure quia
+            voluptatibus rerum facere, nulla magni, veritatis, voluptatem ipsam dolorem quibusdam eos fugit aliquid nemo
+            sunt possimus alias
+            eligendi!原本改變宜蘭受到化學讓他成了連載設立升級各類中心環境我還，電視台緊急其實，空間創意學生地面，樂隊使得清除婚姻上網大約就有前來本帖它們，一份點擊數權力至於差不多施工作家網易石油表現遵守會在一流，節省一種能學到研發真實性害怕我一昨天人間什麼時候，時期連結，是。
+        </p>
+        <p class="keep-all">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore accusantium iure quia
+            voluptatibus rerum facere, nulla magni, veritatis, voluptatem ipsam dolorem quibusdam eos fugit aliquid nemo
+            sunt possimus alias
+            lopadotemachose­lachogaleokranioleipsanodrimhypot­rimmatosilphioparaomelikatake­chymenokichlepikossyphophattoperisteralektry
+            eligendi!原本改變宜蘭受到化學讓他成了連載設立升級各類中心環境我還，電視台緊急其實，空間創意學生地面，樂隊使得清除婚姻上網大約就有前來本帖它們，一份點擊數權力至於差不多施工作家網易石油表現遵守會在一流，節省一種能學到研發真實性害怕我一昨天人間什麼時候，時期連結，是。
+        </p>
+
+    </div>
+</body>
+
+</html>

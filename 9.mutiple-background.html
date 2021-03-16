@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mutiple background</title>
+    <style>
+        .map {
+            width: 800px;
+            height: 450px;
+            margin: 0 auto;
+            background: url('./images/map1.jpg');
+            background-size: auto;
+        }
+
+        .map:hover {
+            background: url('./images/1.png') center center no-repeat, url('./images/2.png') 55% 46% no-repeat, url('./images/3.png') 44% center no-repeat, url('./images/map1.jpg');
+            background-size: 300px auto, 10%, 10%, auto;
+        }
+
+        /* ----background後方意義  url圖片  水平 垂直  要不要repeat---- */
+        /* -background-size   若要固定尺寸可用auto 但亦可用給1.寬跟高   2.contain   3.conver-- */
+    </style>
+</head>
+
+<body>
+    <div class="map"></div>
+</body>
+
+</html>

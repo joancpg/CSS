@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grayscale {
+            filter: grayscale(100%);
+        }
+
+
+        /* ---可用100%也可用1-- */
+
+        .Sepia {
+            filter: Sepia(100%);
+        }
+
+        .Hue-rotate {
+            filter: hue-rotate(90deg);
+        }
+
+        .Invert {
+            filter: Invert(1);
+        }
+
+        .Opacity {
+            filter: opacity(0.5);
+        }
+
+        .Brightness {
+            filter: brightness(.5);
+        }
+
+        .contrast {
+            filter: contrast(2);
+        }
+
+        .Blur {
+            filter: blur(30px);
+        }
+
+        .Drop-shadow {
+            filter: drop-shadow(5px 5px 5px #333);
+        }
+
+        .boxshadow {
+            box-shadow: 5px 5px 5px #333;
+
+
+        }
+
+
+        /* --filter vs box-shadow陰影的差別:
+             在img沒差別
+             在pngu有差filter會沿著物件給陰影 但box-shadow只能於box外圍給陰影
+        
+        
+         ---- */
+    </style>
+</head>
+
+<body>
+    <img class="grayscale" src="./images/nook_small.jpg" alt="">
+    <img class="Sepia" src="./images/nook_small.jpg" alt="">
+    <img class="Hue-rotate" src="./images/nook_small.jpg" alt="">
+    <img class="Invert" src="./images/nook_small.jpg" alt="">
+    <img class="Opacity" src="./images/nook_small.jpg" alt="">
+    <img class="Brightness" src="./images/nook_small.jpg" alt="">
+    <img class="contrast" src="./images/nook_small.jpg" alt="">
+    <img class="Blur" src="./images/nook_small.jpg" alt="">
+    <img class="Drop-shadow" src="./images/ex1_result1.png" alt="">
+    <img class="boxshadow" src="./images/ex1_result1.png" alt="">
+
+</body>
+
+</html>
